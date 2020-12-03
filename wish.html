@@ -35,65 +35,68 @@ body{
     </style>
 </head>
 <body>
-<audio src="jingle_bell_theme.mp3" autoplay="autoplay">
-
-    
-</audio>
-
+<audio src="jingle_bell_theme.mp3" autoplay="autoplay"></audio>
 
     <nav class="navbar fixed-bottom navbar-dark bg-danger">
 
-        <div class="input-group " id="as">
-        <input type="text" class="form-control" id="ame" placeholder="Enter Your Name" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <div class="input-group-append">
-            <button onclick="joel()" class="btn text-white btn-outline-primary" type="button" id="button-addon2">Button</button>
-        </div>
-        </div>
-        <a href="" style="display: none;" class="btn btn-danger mx-auto text-white" id="aa">Share</a>
+            <div class="input-group " id="as">
+            <input type="text" class="form-control" id="ame" placeholder="Enter Your Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button onclick="joel()" class="btn text-white btn-outline-primary" type="button" id="button-addon2">Button</button>
+            </div>
+            </div>
+            <a href="" style="display: none;" class="btn btn-danger mx-auto text-white" id="aa">Share</a>
     </nav>
-<section class="container">
-    <div class="container">
-        <center>
-        <div class="col-12 col-md-6 mx-auto">
-            
-            <h3 class="text-center mt-5" id="demo"></h3>
-
-            <figure class="mt-3 text-center figure_name" >
+    
+    <section class="container">
+        <div class="container">
+            <center>
+            <div class="col-12 col-md-6 mx-auto">
                 
-                <h1 class="user_name h top_name"  id="name"></h1>
-        
-            </figure>
-            <p class="card-title text-center animated wishesed pulse  tenpxtop">
-                <span class="orange-text">W</span>
-                <span class="yellow-text">i</span>
-                <span class="lime-text">s</span>
-                <span class="orange-text">h</span>
-                <span class="yellow-text">i</span>
-                <span class="lime-text">n</span>
-                <span class="orange-text">g</span>
-                <span class="yellow-text"></span>
-                <span class="lime-text">Y</span>
-                <span class="orange-text">o</span>
-                <span class="yellow-text">u</span>
+                <h3 class="text-center mt-5" id="demo"></h3>
 
-            </p>
-            <img class="p1 img" alt="" style="width: 80%;" src="https://openit.site/festival/images/festival/christmas/24.png">
-            <img class="p-md-5 p-0 img" style="width: 90%;" src="https://openit.site/festival/images/festival/christmas/1.gif">
-        </center>
+                <figure class="mt-3 text-center figure_name" >
+                    
+                    <h1 class="user_name h top_name"  id="name"></h1>
+            
+                </figure>
+                <p class="card-title text-center animated wishesed pulse  tenpxtop">
+                    <span class="orange-text">W</span>
+                    <span class="yellow-text">i</span>
+                    <span class="lime-text">s</span>
+                    <span class="orange-text">h</span>
+                    <span class="yellow-text">i</span>
+                    <span class="lime-text">n</span>
+                    <span class="orange-text">g</span>
+                    <span class="yellow-text"></span>
+                    <span class="lime-text">Y</span>
+                    <span class="orange-text">o</span>
+                    <span class="yellow-text">u</span>
+
+                </p>
+                <img class="p1 img" alt="" style="width: 80%;" src="https://openit.site/festival/images/festival/christmas/24.png">
+                <img class="p-md-5 p-0 img" style="width: 90%;" src="https://openit.site/festival/images/festival/christmas/1.gif">
+            </center>
+            </div>
         </div>
-    </div>
-</section>
-<script>
-        var url_string =window.location.href;
-        var url = new URL(url_string);
-        var c = url.searchParams.get("name");
-        console.log(c);              
-            if (c) {
-                document.getElementById('name').innerHTML = c;
+    </section>
 
-            }                                                                       
-</script>
-        <script>
+
+    <!-- Script for get method -->
+    <script>
+            var url_string =window.location.href;
+            var url = new URL(url_string);
+            var c = url.searchParams.get("name");
+            console.log(c);              
+                if (c) {
+                    document.getElementById('name').innerHTML = c;
+
+                }                                                                       
+    </script>
+
+
+    <!-- Script for timer -->
+    <script>
         // Set the date we're counting down to
         var countDownDate = new Date("dec 25, 2020 15:37:25").getTime();
 
@@ -122,8 +125,11 @@ body{
             document.getElementById("demo").innerHTML = "EXPIRED";
         }
         }, 1000);
-        </script>
-        <script>
+    </script>
+
+
+    <!-- Script for getting value and making link -->
+     <script>
             function joel() {
 
                 let an = document.getElementById('ame').value
@@ -137,114 +143,114 @@ body{
                 }
 
             }
-        </script>
-        <style>
-a{
-    text-decoration: none;
-}
-.pulse{-webkit-animation-name:pulse;/*! animation-name:pulse; */}
-@-webkit-keyframes pulse{0%,100%{-webkit-transform:scale(1)}50%{-webkit-transform:scale(1.1)}}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
-.figure_name {
-    animation:wobble 5s ease-in-out infinite;
-    transform-origin:center center;
-    transform-style:preserve-3d;
-    font-size: 4px;
-    margin: -5em 0;
-    margin-bottom: 65px;
-}.top_name {
-	max-width: 100%;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	/* white-space: nowrap; */
-	/* font-size: 26px; */
-	animation: glow 10s ease-in-out infinite;
-}
-.h{
-	display: block;
-	width: 100%;
-	line-height: 1.5;
-	font: 900 9em 'Concert One', sans-serif;
-	text-transform: uppercase;
-	position: absolute;
-	color: #fff;
-}
-@keyframes glow {
-  0%,100%{ text-shadow:0 0 30px red; }
-  25%{ text-shadow:0 0 30px orange; }
-  50%{ text-shadow:0 0 30px forestgreen; }
-  75%{ text-shadow:0 0 30px cyan; }
-}
-@keyframes wobble {
-    0%,100%{ transform:rotate3d(1,1,0,20deg); }
-    25%{ transform:rotate3d(-1,1,0,20deg); }
-    50%{ transform:rotate3d(-1,-1,0,20deg); }
-    75%{ transform:rotate3d(1,-1,0,20deg); }
-}
+    </script>
+    <style>
+    a{
+        text-decoration: none;
+    }
+    .pulse{-webkit-animation-name:pulse;/*! animation-name:pulse; */}
+    @-webkit-keyframes pulse{0%,100%{-webkit-transform:scale(1)}50%{-webkit-transform:scale(1.1)}}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+    .figure_name {
+        animation:wobble 5s ease-in-out infinite;
+        transform-origin:center center;
+        transform-style:preserve-3d;
+        font-size: 4px;
+        margin: -5em 0;
+        margin-bottom: 65px;
+    }.top_name {
+        max-width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        /* white-space: nowrap; */
+        /* font-size: 26px; */
+        animation: glow 10s ease-in-out infinite;
+    }
+    .h{
+        display: block;
+        width: 100%;
+        line-height: 1.5;
+        font: 900 9em 'Concert One', sans-serif;
+        text-transform: uppercase;
+        position: absolute;
+        color: #fff;
+    }
+    @keyframes glow {
+    0%,100%{ text-shadow:0 0 30px red; }
+    25%{ text-shadow:0 0 30px orange; }
+    50%{ text-shadow:0 0 30px forestgreen; }
+    75%{ text-shadow:0 0 30px cyan; }
+    }
+    @keyframes wobble {
+        0%,100%{ transform:rotate3d(1,1,0,20deg); }
+        25%{ transform:rotate3d(-1,1,0,20deg); }
+        50%{ transform:rotate3d(-1,-1,0,20deg); }
+        75%{ transform:rotate3d(1,-1,0,20deg); }
+    }
 
-.h:nth-child(2){ transform:translateZ(5px); }
-.h:nth-child(3){ transform:translateZ(10px);}
-.h:nth-child(4){ transform:translateZ(15px); }
-.h:nth-child(5){ transform:translateZ(20px); }
-.h:nth-child(6){ transform:translateZ(25px); }
-.h:nth-child(7){ transform:translateZ(30px); }
-.h:nth-child(8){ transform:translateZ(35px); }
-.h:nth-child(9){ transform:translateZ(40px); }
-.h:nth-child(10){ transform:translateZ(45px); }
-          p.card-title.center-align.comic.wishesed {
-    font-family: serif;
-    font-size: 37px !important;
-}
-/*Whising you text*/
-.orange-text{color: orange;}
-.green-text{color: green;}
-.lime-text{color: lime;}
-.teal-text{color: teal;}
-.yellow-text{color: yellow;}
-
-
-.wishesed{font-family:cursive;font-size:35px!important;font-weight:700!important;letter-spacing:-5px}
+    .h:nth-child(2){ transform:translateZ(5px); }
+    .h:nth-child(3){ transform:translateZ(10px);}
+    .h:nth-child(4){ transform:translateZ(15px); }
+    .h:nth-child(5){ transform:translateZ(20px); }
+    .h:nth-child(6){ transform:translateZ(25px); }
+    .h:nth-child(7){ transform:translateZ(30px); }
+    .h:nth-child(8){ transform:translateZ(35px); }
+    .h:nth-child(9){ transform:translateZ(40px); }
+    .h:nth-child(10){ transform:translateZ(45px); }
+            p.card-title.center-align.comic.wishesed {
+        font-family: serif;
+        font-size: 37px !important;
+    }
+    /*Whising you text*/
+    .orange-text{color: orange;}
+    .green-text{color: green;}
+    .lime-text{color: lime;}
+    .teal-text{color: teal;}
+    .yellow-text{color: yellow;}
 
 
+    .wishesed{font-family:cursive;font-size:35px!important;font-weight:700!important;letter-spacing:-5px}
 
 
-/*Wishing you text*/
-.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-timing-function:linear;animation-timing-function:linear;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;}span.tin {font-size: 25px;}p.ready{font-size:30px!important;color:#339B9B!important;text-shadow:none!important;-ms-transform:rotate(-15deg);-webkit-transform:rotate(-15deg);-o-transform:rotate(-15deg);transform:rotate(-15deg);position: absolute;top: 220px;right: 60px;width: 320px;line-height:1.2;opacity: 0.5;}a.whatssap{position: fixed;bottom: 45px;}
 
 
+    /*Wishing you text*/
+    .animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-timing-function:linear;animation-timing-function:linear;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;}span.tin {font-size: 25px;}p.ready{font-size:30px!important;color:#339B9B!important;text-shadow:none!important;-ms-transform:rotate(-15deg);-webkit-transform:rotate(-15deg);-o-transform:rotate(-15deg);transform:rotate(-15deg);position: absolute;top: 220px;right: 60px;width: 320px;line-height:1.2;opacity: 0.5;}a.whatssap{position: fixed;bottom: 45px;}
 
 
 
 
 
 
-/*Marquee*/
-
-.marquee {
-    z-index: 1;
-    width: auto;
-    height: 100%;
-    top: 1%;
-    color: #000;
-    position: fixed;
-}
-
-/*Marquee end*/
 
 
+    /*Marquee*/
 
+    .marquee {
+        z-index: 1;
+        width: auto;
+        height: 100%;
+        top: 1%;
+        color: #000;
+        position: fixed;
+    }
 
-
-/* Faded images end */
-
-.tenpxtop{
-    margin-top: 10px !important;
-}
+    /*Marquee end*/
 
 
 
 
 
-        </style>
+    /* Faded images end */
+
+    .tenpxtop{
+        margin-top: 10px !important;
+    }
+
+
+
+
+
+    </style>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
