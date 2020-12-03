@@ -37,9 +37,21 @@ body{
 <body onload="playAudio()">
     <script data-ad-client="ca-pub-7876229632600695" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<audio src="jingle_bell_theme.mp3"  id="pp"></audio>
+<audio id="myAudio">
+
+  <source src="jingle_bell_theme.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 <script>
-    document.getElementById('pp').play();
+
+
+function playAudio() { 
+var x = document.getElementById("myAudio");
+
+  x.play(); 
+} 
+
+
 </script>
     <nav class="navbar fixed-bottom navbar-dark bg-danger">
 
@@ -90,6 +102,9 @@ body{
             var url_string =window.location.href;
             var url = new URL(url_string);
             var c = url.searchParams.get("name");
+var str =c;
+str = str.replace(/\s+/g,'-' ).toUpperCase();
+
             console.log(c);              
                 if (c) {
                     document.getElementById('name').innerHTML = c;
@@ -141,6 +156,9 @@ body{
                     document.getElementById('name').innerHTML = an;
                     document.getElementById('aa').style.display='block';
                     document.getElementById('as').style.display='none';
+var str = an
+str = str.replace(/\s+/g, '-').toLowerCase();
+
                     document.getElementById('aa').href = 'https://wa.me/?text= I am '+an+' Open  this link once and see what he wants to tell https://joelthobias.github.io/ChristmassWish?name=' + an;
 
                 }
