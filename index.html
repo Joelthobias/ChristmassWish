@@ -104,7 +104,7 @@ var x = document.getElementById("myAudio");
             var url = new URL(url_string);
             var c = url.searchParams.get("name");
 var str =c;
-str = str.replace(/\s+/g,'-' ).toUpperCase();
+c= str.replace(/\s+/g,'-' ).toUpperCase();
 
             console.log(c);              
                 if (c) {
