@@ -104,7 +104,7 @@ var x = document.getElementById("myAudio");
             var url = new URL(url_string);
             var c = url.searchParams.get("name");
 var str =c;
-c= str.replace(/\s+/g,'-' ).toUpperCase();
+c= str.replace('-' ,/\s+/g ).toUpperCase();
 
             console.log(c);              
                 if (c) {
@@ -158,9 +158,9 @@ c= str.replace(/\s+/g,'-' ).toUpperCase();
                     document.getElementById('aa').style.display='block';
                     document.getElementById('as').style.display='none';
 var str = an
-an = str.replace(/\s+/g, '-').toLowerCase();
+anl = str.replace(/\s+/g, '-').toLowerCase();
 
-                    document.getElementById('aa').href = 'https://wa.me/?text= I am '+an+' Open  this link once and see what he wants to tell https://joelthobias.github.io/ChristmassWish?name=' + an;
+                    document.getElementById('aa').href = 'https://wa.me/?text= I am '+an+' Open  this link once and see what he wants to tell https://wishonevent.tk?name=' + anl;
 
                 }
 
