@@ -16,8 +16,9 @@
         }
         body{
             color: #fff;
-            /* background-color: #000; */
+           
             background: url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+            background-size: contain;
         }
         @media(max-width: 568px){
                     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
@@ -27,10 +28,12 @@
 	margin-right: auto;
 	margin-left: auto;
 }
-body{
-    margin-bottom: 5em;
-}
+
         }
+        body{
+    margin-bottom: 60px;
+    background-size: contain;
+}
 
     </style>
 </head>
@@ -54,16 +57,7 @@ var x = document.getElementById("myAudio");
 
 
 </script>
-    <nav class="navbar fixed-bottom navbar-dark bg-danger">
 
-            <div class="input-group " id="as">
-            <input type="text" class="form-control" id="ame" placeholder="Enter Your Name" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button onclick="joel()" class="btn text-white btn-outline-primary" type="button" id="button-addon2">Button</button>
-            </div>
-            </div>
-            <a href="" style="display: none;" class="btn btn-danger mx-auto text-white" id="aa">Share</a>
-    </nav>
 
     <section class="container">
         <div class="container">
@@ -77,7 +71,7 @@ var x = document.getElementById("myAudio");
                     <h1 class="user_name h top_name"  id="name"></h1>
             
                 </figure>
-                <p class="card-title text-center animated wishesed pulse  tenpxtop">
+                <p class="m-3 card-title text-center animated wishesed pulse  tenpxtop">
                     <span class="orange-text">W</span>
                     <span class="yellow-text">i</span>
                     <span class="lime-text">s</span>
@@ -96,8 +90,23 @@ var x = document.getElementById("myAudio");
             </center>
             </div>
         </div>
-    </section>
 
+    </section>
+<div class="col-12 text-center">
+            <small class=" col-12">
+                <a href='https://oxygenweb.ml/' class=' text-white ' >Created by Oxygen</a>
+            </small>
+</div>
+    <nav class="navbar fixed-bottom navbar-dark bg-danger">
+
+            <div class="input-group " id="as">
+            <input type="text" class="form-control" id="ame" placeholder="Enter Your Name to create one for you" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button onclick="joel()" class="btn text-white btn-outline-primary" type="button" id="button-addon2">Create</button>
+            </div>
+            </div>
+            <a href="" style="display: none;" class=" col-12 btn btn-danger mx-auto text-white" id="aa">Share</a>
+    </nav>
     <!-- Script for get method -->
     <script>
             var url_string =window.location.href;
@@ -273,9 +282,7 @@ anl = str.replace(/\s+/g, '-').toLowerCase();
 
 
     </style>
-<small>
-<a href='https://oxygenweb.ml/' class='text-center' >by Oxygen</a>
-</small>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
